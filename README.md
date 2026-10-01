@@ -2,6 +2,10 @@
 
 ### Software Engineering Group Project — Team 1
 
+<p align="center">
+  <img src="bsu-vault-preview.png" alt="BSU VAULT Application Preview" width="900">
+</p>
+
 BSU VAULT is a password manager prototype developed as part of the Team 1 Software Engineering group project.
 
 The application is built with **React** and **Vite** and provides separate Administrator and Employee areas for managing employee accounts and password records.

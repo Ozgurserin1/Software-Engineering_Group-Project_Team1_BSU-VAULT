@@ -8,7 +8,7 @@
 
 BSU VAULT is a password manager prototype developed as part of the Team 1 Software Engineering group project.
 
-The application is built with **React** and **Vite** and provides separate Administrator and Employee areas for managing employee accounts and password records.
+The application is built with React and Vite and packaged as a Windows desktop application using Electron. It provides separate Administrator and Employee areas for managing employee accounts and password records.
 
 ---
 

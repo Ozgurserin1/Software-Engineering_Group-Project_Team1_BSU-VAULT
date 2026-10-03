@@ -38,13 +38,40 @@ The application is built with **React** and **Vite** and provides separate Admin
 
 ## 🛠️ Technologies
 
-- React
-- Vite
+- React 19
+- Vite 7
+- Electron
+- electron-builder
 - JavaScript
 - HTML
 - CSS
 - Local Storage
 - Session Storage
+- NSIS Windows Installer
+
+---
+## 🖥️ Desktop Application
+
+BSU VAULT is also available as a Windows desktop application using Electron.
+
+The React and Vite application is packaged with Electron and electron-builder. A Windows installer is generated using NSIS.
+
+### Run the desktop application
+
+~~~bash
+npm install
+npm run desktop
+~~~
+
+### Build the Windows installer
+
+~~~bash
+npm run dist:win
+~~~
+
+The Windows installer is available from the GitHub Releases section:
+
+**BSU VAULT Desktop v1.0.0**
 
 ---
 
@@ -64,6 +91,8 @@ The application is built with **React** and **Vite** and provides separate Admin
 
 ~~~text
 BSU_Vault/
+├── electron/
+│   └── main.cjs
 ├── src/
 │   ├── assets/
 │   ├── App.jsx
@@ -93,15 +122,29 @@ Open a terminal in the project folder and run:
 npm install
 ~~~
 
-### 3. Start the application
-
-Run:
+### 3. Run the development version
 
 ~~~bash
 npm run dev
 ~~~
 
-Vite will display a local development address in the terminal. Open this address in your web browser.
+Vite will display a local development address in the terminal.
+
+### 4. Run the desktop application
+
+~~~bash
+npm run desktop
+~~~
+
+This builds the React/Vite application and opens BSU VAULT as an Electron desktop application.
+
+### 5. Build the Windows installer
+
+~~~bash
+npm run dist:win
+~~~
+
+The generated Windows installer is placed in the `release` folder. The final installer is also available from the GitHub Releases section as **BSU VAULT Desktop v1.0.0**.
 
 ---
 
